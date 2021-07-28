@@ -1,0 +1,15 @@
+div.bartender_containder{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+
+    button{
+        width: calc(100%/3);
+        border: none;
+        font-size: 50px;
+    }
+    button:hover{
+        background: black;
+        color: white;
+    }
+}
