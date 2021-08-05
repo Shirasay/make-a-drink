@@ -9,7 +9,36 @@ div.bartender_containder{
         font-size: 50px;
     }
     button:hover{
-        background: black;
-        color: white;
+        background: hsl(0, 0%, 0%);
+        color: hsl(0, 0%, 100%);
+    }
+}
+section.barman_section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    div.voting_container{
+        width: 100%;
+        height: 20em;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        button{
+            width: 30%;
+            height: 40%;
+            border: none;
+            color: white;
+            background: hsl(0, 0%, 0%);
+            margin: 10px 0ss;
+        }
+
+        .invisible{
+            opacity: 0;
+        }
     }
 }

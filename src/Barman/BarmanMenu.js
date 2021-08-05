@@ -1,17 +1,24 @@
 import React, {useState} from "react"
-import Drinks from './Drinks'
+import Drinks from '../Common/Drinks'
 import Questionnarie from './Questionnarie'
 import Voting from './Voting'
 
-function Bartender() {
+export default function Bartender() {
+
+    const [isVoting, setIsVoting]=useState(false)
+    const [isQuestionnarie, setIsQuestionnarie]=useState(false)
+    const [isDrinks, setIsDrinks]=useState(false)
+
     
     return<>
-        <div className='bartender_containder'>
-            <button className='bartender_menu'>Głosowanie</button>
-            <button className='bartender_menu'>Ankieta</button>
-            <button className='bartender_menu'>Lista Drinów</button>
-        </div>
+        {isVoting || isQuestionnarie || isDrinks ? <section className='barman_section'>
+        {isVoting && <Voting/>}
+        {isQuestionnarie && <Questionnarie/>}
+        {isDrinks && <Drinks/>}
+        </section> : <div className='bartender_containder'>
+            <button className='bartender_menu' onClick={()=>setIsVoting(true)}>Głosowanie</button>
+            <button className='bartender_menu' onClick={()=>setIsQuestionnarie(true)}>Ankieta</button>
+            <button className='bartender_menu' onClick={()=>setIsDrinks(true)}>Lista Drinów</button>
+        </div> }
     </>
 }
-
-export default Bartender;
