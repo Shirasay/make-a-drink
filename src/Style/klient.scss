@@ -1,0 +1,48 @@
+section.client_section{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    button.client_btn{
+        width: 30%;
+        height: 20%;
+        border: none;
+        color: white;
+        background: hsl(0, 0%, 0%);
+        margin: 10px 0ss;
+    }
+
+    button.unclickable{
+        background: hsl(0, 0%, 30%);
+        pointer-events: none;
+    
+    }
+    div.drink_menu{
+        width: 100vw;
+        height: 100vh;
+        position: absolute;
+        background: white;
+
+    }
+        
+}
+section.client_container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+   
+    button.client_btn{
+        width: 30%;
+        height: 20%;
+        border: none;
+        color: white;
+        background: hsl(0, 0%, 0%);
+        margin: 10px 0ss;
+    }
+    
+}

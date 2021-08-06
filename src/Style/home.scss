@@ -1,0 +1,23 @@
+div.home_container{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    a{
+        width: calc(100%/2);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 50px;
+        text-decoration: none;
+        color: black;
+    }
+    
+    a:hover{
+        background: black;
+        color: white;
+    }
+}
